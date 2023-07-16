@@ -10,10 +10,15 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/category/:name',
+      path: '/:category',
       name: 'category',
       props: true,
       component: () => import('../views/CategoryView.vue')
+    },
+    {
+      path: '/:category/:subcategory',
+      name: 'subcategory',
+      component: import('../views/SubcategoryView.vue')
     }
   ]
 })

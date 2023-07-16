@@ -6,17 +6,18 @@ query getCategories {
       level
       name
       path
-      url_path
+      url_key
       children_count
       children {
         uid
         level
         name
         path
-        url_path
+        url_key
         children_count
         children {
           uid
+          url_key
           level
           name
           path

@@ -1,11 +1,13 @@
-query getProducts ($filter: ProductAttributeFilterInput) {
-  products(filter: $filter) {
+query getProductsByCategory($uid: String) {
+  products(filter: { category_uid: { eq: $uid } }) {
     total_count
     items {
       name
       sku
-      image
-      image_label
+      image {
+        url
+        label
+      }
       price_range {
         minimum_price {
           regular_price {
