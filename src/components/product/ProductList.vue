@@ -14,7 +14,10 @@ const props = defineProps({
 
 const { categoryUid } = toRefs(props)
 const { result, loading } = useQuery(getProducts, { uid: categoryUid })
-const currentProducts = computed(() => result.value.products.items)
+console.log(result)
+const currentProducts = computed(() => result.value?.products.items)
+
+console.log(loading)
 </script>
 
 <template>
