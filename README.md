@@ -8,7 +8,8 @@ Vite
 Vitest  
 Graphql (apollo-composable)  
 Tailwind  
-Firebase (deploy)
+Firebase (deploy)  
+Vitest
 
 
 ## Customize configuration
